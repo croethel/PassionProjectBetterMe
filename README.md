@@ -8,4 +8,4 @@ We live in a world where there are an unlimited amount of resources and informat
 
 My MVP will allow a user to create a profile and begin tracking their behaviors, which being able to see trends of how each area impacts their mental health and mood. 
 
-I’ll do this using Python, Flask, Heroku and a SQL database to maintain records.
+I’ll do this using Python, Django, Heroku and a SQL database to maintain records.
