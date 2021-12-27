@@ -10,3 +10,7 @@ class AboutPageView(TemplateView):
 
 class TrackerPageView(TemplateView):
     template_name = 'pages/tracker.html'
+
+
+class StatsPageView(TemplateView):
+    template_name = 'pages/stats.html'
