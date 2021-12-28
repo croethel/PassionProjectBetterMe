@@ -33,7 +33,10 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
-    'blog'
+    'blog',
+    'survey',
+
+    'bootstrapform'
 ]
 
 
@@ -174,3 +177,23 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+
+# SURVEY INFO
+
+# Permit to open the csv in excel without problem with separator
+# Using this trick : https://superuser.com/a/686415/567417
+EXCEL_COMPATIBLE_CSV = True
+
+# The separator for questions (Default to ",")
+CHOICES_SEPARATOR = "|"
+
+# What is shown in export when the user do not answer (Default to "Left blank")
+USER_DID_NOT_ANSWER = "NAA"
+
+# Path to the Tex configuration file (default to an internal file that should be sufficient)
+from pathlib import Path
+TEX_CONFIGURATION_FILE = Path("tex", "tex.conf")
+
+# Default color for exported pdf pie (default to "red!50")
+SURVEY_DEFAULT_PIE_COLOR = "blue!50"
