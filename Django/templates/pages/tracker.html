@@ -4,14 +4,117 @@
 {% block title %}BetterMe Tracker{% endblock title %}
 
 {% block content %}
+
+
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+   <body background="https://images.unsplash.com/photo-1527784281695-866fa715d9d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80">
+
+
   <h1>Welcome to BetterMe: Daily Tracker</h1>
   <p class="lead">Start your daily tracking now!</p>
-
-
       <p>
          Click here to view your <a href="/stats/"> stats</a> now.
       </p>
+
+
+      <body>
+
+         <!-- Create Form -->
+         <form id="form">
+
+            <!-- MOOD -->
+            <div class="form-control">
+                <label for="mood" id="label-mood">
+                    How are you feeling today?
+                </label>
+                 
+                <!-- Dropdown options -->
+                <select name="mood" id="mood">
+                  <option value="" selected disabled hidden>Choose here</option>
+                  <option value="amazing">Amazing</option>
+                  <option value="great">Great</option>
+                  <option value="good">Good</option>
+                  <option value="numb">Numb</option>
+                  <option value="alright">Alright</option>
+                  <option value="not great">Not Great</option>
+                  <option value="terrible">Terrible</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- SLEEP -->
+            <div class="form-control">
+               <label for="sleep" id="label-sleep">
+                   How did you sleep last night?
+               </label>
+                
+               <!-- Dropdown options -->
+               <select name="sleep" id="sleep">
+                  <option value="" selected disabled hidden>Choose here</option>
+                  <option value="amazing">Amazing</option>
+                  <option value="great">Great</option>
+                  <option value="good">Good</option>
+                  <option value="alright">Alright</option>
+                  <option value="not great">Not Great</option>
+                  <option value="terrible">Terrible</option>
+               </select>
+           </div>
+           
+           <br>
+
+            <!-- MEDITATE -->
+           <div class="form-control">
+            <label>Did you meditate yesterday?</label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+               <input type="radio"
+                      id="recommed-1"
+                      name="recommed">Yes</input>
+           </label>
+           <label for="recommed-2">
+               <input type="radio"
+                      id="recommed-2"
+                      name="recommed">No</input>
+            </div>
+            
+            <br>
+       
+             <div class="form-control">
+                 <label>Did you participate in any of the below?
+                     <small>(Check all that apply)</small>
+                 </label><br>
+                 <!-- Input Type Checkbox -->
+                 <label for="inp-1">
+                     <input type="checkbox"
+                            name="inp">Self Affirmations</input></label><br>
+                 <label for="inp-2">
+                     <input type="checkbox"
+                            name="inp">Physical Exercise</input></label><br>
+                 <label for="inp-3">
+                     <input type="checkbox"
+                            name="inp">Physical Intimacy</input></label><br>
+                 <label for="inp-4">
+                     <input type="checkbox"
+                            name="inp">Substance Use</input></label><br>
+                 <label for="inp-5">
+                     <input type="checkbox"
+                            name="inp">Verbal Altercation</input></label><br>
+             </div>
+       
+             <br><br><br><br><br><br><br><br><br><br><br><br>
+       
+             <button type="submit" value="submit">
+                 Submit Your Response
+             </button>
+         </form>
+     </body>
+       
+     </html>
+
+
+
 </html>
 </div>
 {% endblock content %}
