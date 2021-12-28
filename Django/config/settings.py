@@ -33,15 +33,9 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
-    'blog',
-
-    # Survey
-    'bootstrapform',
-    'survey',
+    'blog'
 ]
 
-CSV_DIRECTORY = Path("csv") # Define the directory where csv are exported
-TEX_DIRECTORY = Path("tex") # Define the directory where tex files and pdf are exported
 
 
 # MIDDLEWARE

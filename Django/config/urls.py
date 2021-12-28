@@ -7,7 +7,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('pages.urls')),
     path('blog/', include('blog.urls')),
-    path('survey', include('survey.urls'))
 ]
 
 if settings.DEBUG:
